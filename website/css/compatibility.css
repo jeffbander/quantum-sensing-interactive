@@ -1,0 +1,138 @@
+/* Additional cross-browser compatibility styles */
+
+/* Ensure consistent box-sizing across browsers */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Normalize margins and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Fix for IE flexbox issues */
+.flex-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* Ensure images are responsive across browsers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix for Safari button styling */
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* Fix for Firefox form elements */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Fix for IE SVG scaling */
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for older browsers that don't support grid */
+@supports not (display: grid) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .grid-item {
+    flex: 1 1 300px;
+    margin: 10px;
+  }
+}
+
+/* Fix for older browsers that don't support CSS variables */
+:root {
+  --primary-color: #00539B;
+  --secondary-color: #0078D4;
+  --text-color: #333;
+  --background-color: #f8f9fa;
+}
+
+@supports not (--primary-color: #00539B) {
+  .primary-color {
+    color: #00539B;
+  }
+  
+  .secondary-color {
+    color: #0078D4;
+  }
+  
+  .text-color {
+    color: #333;
+  }
+  
+  .background-color {
+    background-color: #f8f9fa;
+  }
+}
+
+/* Fix for IE and Edge form elements */
+select::-ms-expand {
+  display: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* Fix for Firefox focus styles */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #00539B;
+}
+
+/* Fix for Safari overflow issues */
+.overflow-container {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for IE11 object-fit */
+.object-fit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .object-fit-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}

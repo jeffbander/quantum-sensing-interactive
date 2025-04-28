@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/compatibility.css">
+    <title>Case Study - Mount Sinai West Center for AI and Quantum Sensing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Ensure proper encoding -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/center_logo.png" alt="Center for AI and Quantum Sensing Logo" class="center-logo">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="scientific-foundation.html">Scientific Foundation</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                        <li><a href="case-study.html" class="active">Case Study</a></li>
+                        <li><a href="implementation.html">Implementation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Case Studies: MCG in Detection of ACS</h1>
+        </div>
+    </section>
+
+    <section class="about-intro">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Pioneering Studies in Magnetocardiography for Acute Coronary Syndrome Detection</h2>
+                    <p>The Mount Sinai West Center for AI and Quantum Sensing has conducted groundbreaking research on the application of Magnetocardiography (MCG) for the detection of Acute Coronary Syndrome (ACS). Our studies, DUET and DISCOVERY, demonstrate the potential of quantum-enhanced MCG to revolutionize cardiac diagnostics in emergency settings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="study-section">
+        <div class="container">
+            <div class="study-content">
+                <div class="study">
+                    <h2>DISCOVERY Study</h2>
+                    <h3>Magnetocardiography powered by quantum sensors to detect ACS</h3>
+                    
+                    <p>The DISCOVERY study represents the first real-world feasibility study of a mobile, scalable MCG platform developed by SandboxAQ that operates at room temperature with no room shielding. This study was designed to assess the accuracy of MCG in identifying ischemia in patients presenting to an urban emergency department.</p>
+                    
+                    <div class="study-image">
+                        <img src="images/mcg_device.png" alt="MCG Device">
+                    </div>
+                    
+                    <h3>Study Design</h3>
+                    <p>The study enrolled patients with suspected ACS from the Mount Sinai West emergency department. Participants were stratified into two arms:</p>
+                    <ul>
+                        <li>ACS "Rule-In" arm: Patients undergoing intervention for true ACS</li>
+                        <li>ACS "Rule-Out" arm: Patients deemed safe for discharge or admitted for other conditions</li>
+                    </ul>
+                    
+                    <p>The primary objective was to successfully collect MCG data from 100 patients within an existing ACS triage workflow in an emergency department environment. Secondary objectives included characterizing the safety of the SandboxAQ MCG device and identifying Magnetic Field Map (MFM) features that have the potential to differentiate high vs. low ACS risk patients.</p>
+                </div>
+                
+                <div class="study">
+                    <h2>DUET Study</h2>
+                    <h3>Bedside Magnetocardiography for ACS Detection</h3>
+                    
+                    <p>The DUET study investigated the safety and efficacy of a bedside MCG device in identifying non-ST-segment elevation myocardial infarction (NSTEMI) among patients from an urban emergency department. This study utilized quantum magnetometers to develop a non-contact MCG system that overcomes the limitations of traditional SQUID-based systems.</p>
+                    
+                    <div class="study-image">
+                        <img src="images/mcg_field_map.png" alt="MCG Field Map">
+                    </div>
+                    
+                    <h3>Methodology</h3>
+                    <p>The study included a diverse sample of 78 adult patients, not experiencing STEMI, presenting to the emergency department with suspected ACS. After excluding those with technical issues, 72 patients were analyzed. The MCG system used is a custom prototype with 26 optically pumped magnetometers - quantum sensors that measure cardiac magnetic fields with picoTesla sensitivity.</p>
+                    
+                    <p>A 5-minute MCG was recorded within 2 hours of an initial 12-lead ECG. Signal processing and AI algorithms were used to remove ambient interference. Literature-based MCG markers were inputted to a classification and regression tree (CART) model to classify patients as ACS rule-in or rule-out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="container">
+            <h2>Combined Study Results</h2>
+            <p>The results from our studies demonstrate the significant potential of quantum-enhanced MCG for ACS detection in emergency settings. The CART model developed using MCG data showed impressive performance metrics:</p>
+            
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value">86%</div>
+                    <div class="metric-label">Sensitivity</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">92%</div>
+                    <div class="metric-label">Specificity</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">0.46</div>
+                    <div class="metric-label">Positive Predictive Value</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">0.98</div>
+                    <div class="metric-label">Negative Predictive Value</div>
+                </div>
+            </div>
+            
+            <div class="results-image">
+                <img src="images/mcg_results_chart.png" alt="MCG Results Chart">
+                <p class="image-caption">The chart above shows the distribution of ACS Rule-in and Rule-out cases based on T-wave Field Max Angle (TFMA) and QRS:T Wave power ratio (WPR). The clear separation between the groups demonstrates the diagnostic potential of MCG parameters.</p>
+            </div>
+            
+            <h3>Key Findings</h3>
+            <ul>
+                <li>The device successfully captured cardiac signals in a magnetically noisy hospital emergency department</li>
+                <li>5-minute scan time with no adverse events</li>
+                <li>Analysis time of less than 90 seconds per patient recording</li>
+                <li>Compared to ECG, our device would correctly identify 3 times more healthy patients</li>
+                <li>40 out of 45 healthy patients were correctly classified</li>
+                <li>3 out of 4 silent heart attack patients were correctly identified</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="conclusion-section">
+        <div class="container">
+            <h2>Conclusions and Future Directions</h2>
+            <p>Our studies indicate that MCG is a promising, non-contact diagnostic tool for emergency physicians diagnosing suspected ACS cases. The performance of the device is expected to improve with higher channel counts, allowing for better signal-to-noise ratio of cardiac features in the MCG waveforms.</p>
+            
+            <p>These pilot studies show that a bedside, quantum-sensing MCG has the potential to provide safe and accurate diagnostic results, and it is feasible to integrate the device into the emergency department workflow. The value proposition of MCG includes:</p>
+            
+            <ul>
+                <li><strong>Accelerated "rule-out" decisions:</strong> Normal MCG indicates no ACS, potentially allowing for discharge from the emergency room, reducing the health-economic burden of false positives</li>
+                <li><strong>Increased confidence for "rule-in" cases:</strong> Abnormal MCG shows features of disease, suggesting earlier intervention, addressing the rare but dangerous burden of false negatives</li>
+            </ul>
+            
+            <p>The Mount Sinai West Center for AI and Quantum Sensing continues to advance this technology, with ongoing research to further improve the accuracy and clinical utility of quantum-enhanced MCG for cardiac diagnostics.</p>
+            
+            <p><em>Note: The MCG device used in these studies is an investigational device. Limited by United States Law to Investigational Use.</em></p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Learn More About Our Research</h2>
+            <p>The Center for AI and Quantum Sensing at Mount Sinai West is conducting ongoing research in quantum-enhanced diagnostics for various medical conditions.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Our Research Team</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/center_logo.png" alt="Center for AI and Quantum Sensing Logo">
+                    <p>Mount Sinai West Center for AI and Quantum Sensing</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="scientific-foundation.html">Scientific Foundation</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                        <li><a href="case-study.html">Case Study</a></li>
+                        <li><a href="implementation.html">Implementation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 1000 10th Avenue, New York, NY 10019</p>
+                    <p><i class="fas fa-envelope"></i> quantum.sensing@mountsinai.org</p>
+                    <p><i class="fas fa-phone"></i> (212) 555-1234</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mount Sinai West Center for AI and Quantum Sensing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,558 @@
+/* Base styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #00539B; /* Mount Sinai blue */
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #e1f0ff;
+    color: #00539B;
+}
+
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #00539B;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #00539B, #0078D4);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #00539B;
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 450px; /* Increased from 300px to make the logo bigger */
+    transition: transform 0.5s ease;
+}
+
+/* Mount Sinai section */
+.mount-sinai-section {
+    background-color: #f0f7ff;
+    padding: 40px 0;
+}
+
+.mount-sinai-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mount-sinai-logo {
+    flex: 1;
+    max-width: 300px;
+}
+
+.mount-sinai-text {
+    flex: 2;
+}
+
+.mount-sinai-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Features section */
+.features {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #00539B;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #f0f7ff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #00539B;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #00539B;
+}
+
+/* Focus areas section */
+.focus-areas {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.focus-areas h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #00539B;
+    margin-bottom: 50px;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.focus-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid;
+}
+
+.focus-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.cardiology {
+    border-color: #e63946;
+}
+
+.cardiology h3 {
+    color: #e63946;
+}
+
+.neurology {
+    border-color: #8031A7;
+}
+
+.neurology h3 {
+    color: #8031A7;
+}
+
+.musculoskeletal {
+    border-color: #2a9d8f;
+}
+
+.musculoskeletal h3 {
+    color: #2a9d8f;
+}
+
+.emerging {
+    border-color: #e9c46a;
+}
+
+.emerging h3 {
+    color: #e9c46a;
+}
+
+/* Quantum principles section */
+.quantum-principles {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.quantum-principles h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #00539B;
+    margin-bottom: 50px;
+}
+
+.principles-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.principles-image {
+    flex: 1;
+}
+
+.principles-text {
+    flex: 1;
+}
+
+.principles-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.principles-text ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.principles-text li {
+    margin-bottom: 10px;
+}
+
+/* CTA section */
+.cta {
+    padding: 80px 0;
+    background-color: #00539B;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-links h4, .footer-contact h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-links h4:after, .footer-contact h4:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #00539B;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact i {
+    color: #00539B;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .mount-sinai-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .principles-content {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-links h4:after, .footer-contact h4:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-contact p {
+        justify-content: center;
+    }
+    
+    /* Mobile navigation */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    h2 {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Animation for quantum logo */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero-image img {
+    animation: pulse 3s infinite ease-in-out;
+}
