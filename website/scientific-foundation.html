@@ -1,384 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/compatibility.css">
-    <title>Scientific Foundation - Mount Sinai West Center for AI and Quantum Sensing</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Ensure proper encoding -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style>
-        /* Additional page-specific styles */
-        .scientific-section {
-            padding: 60px 0;
-            background-color: white;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #00539B, #0078D4);
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        
-        .page-header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        
-        .principles-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .principle-card {
-            background-color: #f0f7ff;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-        
-        .principle-card h3 {
-            color: #00539B;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        
-        .principle-card p {
-            margin-bottom: 15px;
-        }
-        
-        .principle-card .application {
-            background-color: #e0f7fa;
-            padding: 10px 15px;
-            border-radius: 6px;
-            font-style: italic;
-        }
-        
-        .quantum-ai-integration {
-            margin-top: 60px;
-        }
-        
-        @media (max-width: 768px) {
-            .principles-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Styles for Magnetic Field Strengths & Sensor Technologies Section */
-        .magnetic-field-section {
-            margin: 60px 0;
-            padding: 30px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .magnetic-chart-container {
-            margin: 30px 0;
-            text-align: center;
-        }
-        
-        .magnetic-chart {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .image-caption {
-            margin-top: 15px;
-            font-size: 0.9rem;
-            color: #555;
-        }
-        
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 0.9rem;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        .comparison-table th {
-            background-color: #00539B;
-            color: white;
-            text-align: left;
-            padding: 12px 15px;
-        }
-        
-        .comparison-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .comparison-table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .table-responsive {
-            overflow-x: auto;
-            margin-bottom: 30px;
-        }
-        
-        .sensor-type-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin: 25px 0;
-        }
-        
-        .sensor-type-card {
-            background-color: #f0f7ff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-        
-        .sensor-type-card h4 {
-            color: #00539B;
-            margin-bottom: 15px;
-        }
-        
-        .sensor-type-card ul {
-            padding-left: 20px;
-        }
-        
-        .sensor-type-card li {
-            margin-bottom: 10px;
-        }
-        
-        .quantum-needs-list, .quantum-ai-list {
-            padding-left: 20px;
-            margin: 20px 0;
-        }
-        
-        .quantum-needs-list li, .quantum-ai-list li {
-            margin-bottom: 10px;
-        }
-        
-        .bottom-line {
-            background-color: #e1f0ff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-        
-        .bottom-line h4 {
-            color: #00539B;
-            margin-bottom: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .sensor-type-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Styles for Quantum Sensing Uniqueness Section */
-        .quantum-uniqueness-section {
-            margin: 60px 0;
-            padding: 30px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .section-intro {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            color: #333;
-        }
-        
-        .uniqueness-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin-top: 30px;
-        }
-        
-        .uniqueness-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border-left: 5px solid #00539B;
-        }
-        
-        .uniqueness-card h3 {
-            color: #00539B;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .uniqueness-content {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 30px;
-            align-items: start;
-        }
-        
-        .uniqueness-image {
-            text-align: center;
-        }
-        
-        .uniqueness-img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .uniqueness-text p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-        
-        .uniqueness-list {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .uniqueness-list li {
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-        
-        .highlight-box {
-            background-color: #e1f0ff;
-            padding: 15px;
-            border-radius: 6px;
-            font-weight: 500;
-            color: #00539B;
-            margin-top: 20px;
-        }
-        
-        .requirements-table {
-            margin: 20px 0;
-            overflow-x: auto;
-        }
-        
-        .requirements-table table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9rem;
-        }
-        
-        .requirements-table th {
-            background-color: #00539B;
-            color: white;
-            text-align: left;
-            padding: 12px 15px;
-        }
-        
-        .requirements-table td {
-            padding: 10px 15px;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .requirements-table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        
-        .conclusion-box {
-            background-color: #00539B;
-            color: white;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 40px;
-            text-align: center;
-        }
-        
-        .conclusion-box h3 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-        }
-        
-        .conclusion-box p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        @media (max-width: 992px) {
-            .uniqueness-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .uniqueness-image {
-                margin-bottom: 20px;
-            }
-        }
-        
-        /* Styles for References Section */
-        .references-section {
-            margin: 60px 0;
-            padding: 30px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .references-section h2 {
-            color: #00539B;
-            margin-bottom: 20px;
-        }
-        
-        .references-list {
-            padding-left: 20px;
-        }
-        
-        .references-list li {
-            margin-bottom: 15px;
-            line-height: 1.5;
-        }
-        
-        .references-list a {
-            color: #00539B;
-            text-decoration: none;
-            border-bottom: 1px dotted #00539B;
-        }
-        
-        .references-list a:hover {
-            border-bottom: 1px solid #00539B;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="images/center_logo.png" alt="Center for AI and Quantum Sensing Logo" class="center-logo">
-                </div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="scientific-foundation.html" class="active">Scientific Foundation</a></li>
-                        <li><a href="applications.html">Applications</a></li>
-                        <li><a href="implementation.html">Implementation</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <div class="mobile-menu-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/compatibility.css">
+        <title>Large Quantitative Models and Quantum Sensing</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/partners.css">
+        <link rel="stylesheet" href="css/quantum-animations.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Preload key assets -->
+        <link rel="preload" href="images/center_logo.png" as="image">
+        <link rel="preload" href="images/mount_sinai_logo.png" as="image">
+        <!-- Ensure proper encoding -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="images/center_logo.png" alt="Center for AI and Quantum Sensing Logo" class="center-logo">
                     </div>
-                </nav>
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="LQM.html">LQM</a></li>
+                            <li><a href="scientific-foundation.html"class="active">Scientific Foundation</a></li>
+                            <li><a href="applications.html">Applications</a></li>
+                            <li><a href="case-study.html">Case Study</a></li>
+                            <li><a href="implementation.html">Implementation</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="mobile-menu-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </head>
+<body>
 
     <section class="page-header">
         <div class="container">
