@@ -890,6 +890,250 @@ header {
 }
 
 
+
+/* NV Diamond Sensors Section */
+.nv-diamond-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.nv-diamond-section h2 {
+    color: #00539B;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    border-bottom: 2px solid #00A9E0;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.nv-diamond-section p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+
+
+/* NV Diamond Sensors Image */
+.nv-diamond-section .feature-image {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.nv-diamond-section .feature-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.nv-diamond-section .feature-image:hover img {
+    transform: scale(1.02);
+}
+
+.nv-diamond-section .image-caption {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Card Grid for NV Diamond Section */
+.nv-diamond-section .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.nv-diamond-section .info-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #00539B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nv-diamond-section .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.nv-diamond-section .info-card h4 {
+    color: #00539B;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.nv-diamond-section .info-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.nv-diamond-section .info-card ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.nv-diamond-section .info-card li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+
+/* Highlight Box for NV Diamond Section */
+.nv-diamond-section .highlight-box {
+    background: linear-gradient(135deg, #e1f0ff, #f0f7ff);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border-left: 5px solid #00A9E0;
+}
+
+.nv-diamond-section .highlight-box h4 {
+    color: #00539B;
+    margin-bottom: 15px;
+}
+
+.nv-diamond-section .highlight-box p {
+    margin-bottom: 0;
+}
+
+
+
+/* The Essential Role of AI Section */
+.ai-role-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.ai-role-section h2 {
+    color: #00539B;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    border-bottom: 2px solid #00A9E0;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.ai-role-section p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+
+
+/* AI Image */
+.ai-role-section .feature-image {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.ai-role-section .feature-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.ai-role-section .feature-image:hover img {
+    transform: scale(1.02);
+}
+
+.ai-role-section .image-caption {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Card Grid for AI Role Section */
+.ai-role-section .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.ai-role-section .info-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #00539B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai-role-section .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ai-role-section .info-card h4 {
+    color: #00539B;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.ai-role-section .info-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+
+/* Highlight Box for AI Role Section */
+.ai-role-section .highlight-box {
+    background: linear-gradient(135deg, #e1f0ff, #f0f7ff);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border-left: 5px solid #00A9E0;
+}
+
+.ai-role-section .highlight-box h4 {
+    color: #00539B;
+    margin-bottom: 15px;
+}
+
+.ai-role-section .highlight-box p {
+    margin-bottom: 0;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nv-diamond-section .card-grid,
+    .ai-role-section .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nv-diamond-section .content-section,
+    .ai-role-section .content-section {
+        padding: 30px 20px;
+    }
+}
+
+
+
 /* Additional page-specific styles */
 .implementation-section {
     padding: 60px 0;
